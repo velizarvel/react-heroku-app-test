@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(assets/roboto-condensed.light.ttf);
+  font-weight: 800;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: EconomicaBold;
+  src: url(assets/economica-bold.ttf);
+}
+
+@font-face {
+  font-family: Kalam;
+  src: url(assets/kalam-regular.ttf);
+  font-weight: 800;
+}
+
+body {
+  text-align: center;
+  font-size: 20px;
+  padding: 2.5%;
+  font-family: "RobotoCondensed";
+  /* https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2017/01/26115854/National-park-Tara-98085507.jpg */
+  background: url(assets/old_books1.jpg) no-repeat fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "EconomicaBold";
+}
+
+.btn-css {
+  margin: 5px !important;
+  border-radius: 10px !important;
+}
+
+.btn-css:hover {
+  background-color: #586d74;
+  color: white;
+}
+
+.btn-css:focus {
+  outline: none !important;
+}
+
+.btn-css:active {
+  background-color: #afafaf;
+}
+
+/* .container-fluid {
+  background-color: rgba(220, 220, 220, 0.9);
+  border-radius: 5%;
+} */
+
+#quoteBox,
+#quoteButtons {
+  margin: auto;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+}
+#text {
+  color: lightslategrey;
+  font-weight: bold;
+  font-family: "Kalam", cursive;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 10px lightgrey;
+}
+
+@media only screen and (max-width: 768px) {
+  #text {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 7px lightgrey;
+  }
 }
